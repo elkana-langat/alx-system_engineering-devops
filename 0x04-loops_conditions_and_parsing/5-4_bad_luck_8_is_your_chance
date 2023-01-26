@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# This script displays 'Best School' on normal iteration
+# displays bad luck on the 4 iteration
+# displays good luck on the 8 iteration
+
+a=1
+while [ $a -lt 11 ];
+do
+    if [ $a == 4 ]
+    then
+        echo 'bad luck'
+    elif [ $a == 8 ]
+    then
+        echo 'good luck'
+    else
+        echo 'Best School'
+    fi
+    a=$((a+1))
+done
