@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script displays 'Best School' 10 times
+# On the 9th iteration adds a Hi in a new line
+
+a=10
+while [ $a -gt 0 ];
+do
+    echo 'Best School'
+    if [ $a == 2 ];
+    then
+        echo 'Hi'
+    fi
+    a=$((a-1))
+done
